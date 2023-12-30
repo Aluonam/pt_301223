@@ -1,5 +1,5 @@
 import React from 'react'
-import Task1 from './components/Task1'
+import Task1 from './components/task1/Task1'
 
 const ScreenPrincipal = () => {
   return (
