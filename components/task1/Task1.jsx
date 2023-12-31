@@ -9,7 +9,8 @@ const Task1 = () => {
   return (
     <div className={style.container}>
         Introduce tus tareas de hoy:
-        <input placeholder='Tarea' type='text'></input>
+        <input placeholder='Tarea' type='text' onChange={(e)=>{setTaskUser(e.target.value)}}></input>
+        <button onClick={()=>{}}>Añadir tarea</button>
         
     </div>
   )
