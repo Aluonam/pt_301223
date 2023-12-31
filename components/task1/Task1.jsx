@@ -16,9 +16,7 @@ const Task1 = () => {
 
     const allDataList = dataList.map((task)=>{
       return(
-        <>
-        
-        </>
+          <li>{task}</li>
       )
     })
 
@@ -27,7 +25,10 @@ const Task1 = () => {
         Introduce tus tareas de hoy:
         <input placeholder='Tarea' type='text' onChange={(e)=>{setTaskUser(e.target.value)}} value={taskUser}></input>
         <button onClick={()=>{addTask()}}>Añadir tarea</button>
-        {allDataList}
+        <ul>
+          {allDataList}
+        </ul>
+        
         
     </div>
   )
