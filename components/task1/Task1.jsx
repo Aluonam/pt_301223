@@ -3,15 +3,15 @@ import style from './Task1.module.css'
 
 const Task1 = () => {
 
-    const [dataAPI, setDataAPI] = useState()
+    const [dataList, setDataList] = useState([])
+    const [taskUser, setTaskUser] = useState([])
 
-    useEffect(() => {
-      
-    }, [])
-    
   return (
     <div className={style.container}>
-        Task1</div>
+        Introduce tus tareas de hoy:
+        <input placeholder='Tarea' type='text'></input>
+        
+    </div>
   )
 }
 
