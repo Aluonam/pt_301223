@@ -26,7 +26,7 @@ const Task1 = () => {
         <h3>Introduce tus tareas de hoy:</h3>
       
         <input placeholder='Tarea' type='text' onChange={(e)=>{setTaskUser(e.target.value)}} value={taskUser}></input>
-        <button onClick={()=>{addTask()}}>Añadir tarea</button>
+        <button onClick={()=>{addTask()}} className={style.buttonBlack}>Añadir tarea</button>
         </div>
         
         <ul>
