@@ -22,9 +22,12 @@ const Task1 = () => {
 
   return (
     <div className={style.container}>
+      <div>
         Introduce tus tareas de hoy:
         <input placeholder='Tarea' type='text' onChange={(e)=>{setTaskUser(e.target.value)}} value={taskUser}></input>
         <button onClick={()=>{addTask()}}>Añadir tarea</button>
+        </div>
+        
         <ul>
           {allDataList}
         </ul>
