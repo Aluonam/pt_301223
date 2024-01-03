@@ -9,6 +9,11 @@
     align-items: center;
 }
 
+.inputAndButton{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
 
 .buttonBlack {
     min-width: 130px;
@@ -25,6 +30,7 @@
     border: none;
     background: #343a40;
     box-shadow: 0 5px #212529;
+    margin: 10px 0 20px;
   }
   .buttonBlack:hover {
     box-shadow: 0 3px #212529;
