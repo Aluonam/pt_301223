@@ -21,6 +21,7 @@ const Task1 = () => {
           index != indexDelete
         )
       })
+      setDataList(newTaskList)
     }
 
 
