@@ -37,7 +37,7 @@ const Task1 = () => {
   return (
     <div className={style.container}>
 
-      <h3>Introduce tus tareas de hoy:</h3>
+
       
       <div  className={style.inputAndButton}>
         <input placeholder='Tarea' type='text' onChange={(e)=>{setTaskUser(e.target.value)}} value={taskUser}></input>
