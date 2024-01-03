@@ -16,7 +16,11 @@ const Task1 = () => {
 
     const deleteTask = (indexDelete) => {
       const taskList = structuredClone(dataList);
-      
+      const newTaskList = taskList.filter((actualTask, index)=>{
+        return(
+          index != indexDelete
+        )
+      })
     }
 
 
