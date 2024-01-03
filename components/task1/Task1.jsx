@@ -15,7 +15,8 @@ const Task1 = () => {
     }
 
     const deleteTask = (indexDelete) => {
-
+      const taskList = structuredClone(dataList);
+      
     }
 
 
