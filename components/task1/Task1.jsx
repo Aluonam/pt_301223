@@ -14,9 +14,17 @@ const Task1 = () => {
       console.log(taskList)
     }
 
-    const allDataList = dataList.map((task)=>{
+    const deleteTask = (indexDelete) => {
+
+    }
+
+
+    const allDataList = dataList.map((task, index)=>{
       return(
-          <li>{task}</li>
+        <>
+          <li>{task}</li> 
+          <button onClick={()=>{deleteTask(index)}}>Delete</button>
+          </>
       )
     })
 
