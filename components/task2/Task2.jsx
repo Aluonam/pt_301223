@@ -7,6 +7,7 @@ const Task2 = () => {
     userName : "",
     password : ""
   })
+
   const handleSendClick = () => {
     console.log({ userName: dataUser.userName, password: dataUser.password });
   }
@@ -14,8 +15,8 @@ const Task2 = () => {
   return (
     <div className={style.containerTask2}>
 
-      <input placeholder='nombre de usuario' value={setDataUser.userName}></input>
-      <input placeholder='contraseña' value={setDataUser.password}></input>
+      <input placeholder='nombre de usuario' value={dataUser.userName} onChange={(e)=>{setDataUser({...dataUser,userName:e.target.value})}}></input>
+      <input placeholder='contraseña' value={dataUser.password} onChange={(e)=>{setDataUser({...dataUser,password:e.target.value})}}></input>
       <button onClick={handleSendClick()}>Send</button>
 
 
