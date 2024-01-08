@@ -3,7 +3,9 @@ import style from './Header.module.css'
 
 const Header = () => {
   return (
-    <div className={style.headerTitle}>Header</div>
+    <div className={style.headerTitle}>
+      <h3>Introduce tus tareas de hoy:</h3>
+    </div>
   )
 }
 
