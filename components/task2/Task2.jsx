@@ -15,10 +15,11 @@ const Task2 = () => {
   return (
     <div className={style.containerTask2}>
 
+      <h3>Username:</h3>
       <input placeholder='nombre de usuario' value={dataUser.userName} onChange={(e)=>{setDataUser({...dataUser,userName:e.target.value})}}></input>
+      <h3>Password:</h3>
       <input placeholder='contraseña' value={dataUser.password} onChange={(e)=>{setDataUser({...dataUser,password:e.target.value})}}></input>
       <button onClick={handleSendClick()}>Send</button>
-
 
     </div>
   )
