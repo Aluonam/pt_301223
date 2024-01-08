@@ -42,7 +42,7 @@ const Task1 = () => {
         <button onClick={()=>{addTask()}} className={style.buttonBlack}>Añadir tarea</button>
       </div>
         
-      <ul>
+      <ul className={style.list}>
           {allDataList}
       </ul>
         
