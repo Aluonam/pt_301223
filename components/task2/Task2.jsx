@@ -3,7 +3,11 @@ import style from './Task2.module.css'
 
 const Task2 = () => {
   return (
-    <div className={style.containerTask2}>Task2</div>
+    <div className={style.containerTask2}>
+
+      <input placeholder='nombre de usuario'></input>
+      <input placeholder='contraseña'></input>
+    </div>
   )
 }
 
